@@ -76,8 +76,32 @@ a ?? 1;
 // @id kJ9vJoPzKjr1Ah1stdHWBw
 // ES2019 optional-catch-binding
 // No need to declare a variable in `catch (err)` if you do not use it.
+
 try {
   BOOM;
 } catch {
   return 1;
 }
+
+// @id cmnnvEhCcQJ7pw3B7K2wm8
+// ES2018 object-rest-spread
+// Use spread operator `...` to coerce all remaining object properties into a dedicated object.
+
+const { x, ...others } = { x: 1, y: 2, z: 3 };
+others;
+
+// @id HIKSMLravqnKHzY1N78Mt1
+// ES2018 async-generator-functions
+// Asynchronous generator functions, to be used with `for await` syntax.
+
+async function* myAsyncGenerator() {
+  yield 1;
+  await 2;
+  yield 3;
+}
+
+const values = [];
+for await (const x of myAsyncGenerator()) {
+  values.push(x);
+}
+values;
