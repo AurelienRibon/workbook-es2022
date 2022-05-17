@@ -4,8 +4,10 @@
 
 class C1 {
   foo = 1;
-  static bar = 1;
+  static bar = 10;
 }
+
+new C1().foo + C1.bar;
 
 // @id EuHuf0JOpX8c4t85g8Vu9M
 // ES2022 class-static-block
