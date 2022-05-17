@@ -37,12 +37,12 @@ C2.bar
 // Adds operators `||=` and `&&=`
 
 let a = false;
-a ||= true; // shorthand as `a = a || true;`
+a ||= true; // shorthand for `a = a || true;`
 a;
 
 // @id yjnZH5ZO51mRPklbQvIhSu
 let a = false;
-a &&= true; // shorthand as `a = a && true;`
+a &&= true; // shorthand for `a = a && true;`
 a;
 
 // @id t2ulOvkQGncFtwnQV5ApmF
